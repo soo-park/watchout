@@ -73,7 +73,7 @@ board.on('mousemove', function(){
 var move = function(elements) {
   // transition starts for all 30 of the objects
   // ease defines tweenning of the animation (motion curve)
-  elements.transition().duration(settings.duration).ease('').style({
+  elements.transition().duration(settings.duration).ease('linear').style({
     top: randY,
     left: randX
   // when the transition ends, apply single element to move
